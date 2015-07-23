@@ -25,6 +25,8 @@ public class Fingertips extends ActionBarActivity {
         toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        initViewPager();
     }
 
     private void initViewPager() {
