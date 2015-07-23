@@ -1,15 +1,21 @@
-package com.cosyde.theweakestlink.studentwalkthrough;
+package com.cosyde.theweakestlink.studentwalkthrough.activity;
 
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.cosyde.theweakestlink.studentwalkthrough.R;
+import com.cosyde.theweakestlink.studentwalkthrough.adapter.TabsPagerAdapter;
+
 
 public class Fingertips extends ActionBarActivity {
 
     private Toolbar toolbar;
+    private ViewPager viewPager;
+    private TabsPagerAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +25,13 @@ public class Fingertips extends ActionBarActivity {
         toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    private void initViewPager() {
+        viewPager = (ViewPager) findViewById(R.id.pager);
+        mAdapter = new TabsPagerAdapter(getSupportFragmentManager());
+
+        viewPager.setAdapter(mAdapter);
     }
 
     @Override

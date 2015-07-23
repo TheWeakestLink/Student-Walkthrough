@@ -1,23 +1,25 @@
-package com.cosyde.theweakestlink.studentwalkthrough;
+package com.cosyde.theweakestlink.studentwalkthrough.fragment;
 
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.cosyde.theweakestlink.studentwalkthrough.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Events.OnFragmentInteractionListener} interface
+ * {@link Schedule.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Events#newInstance} factory method to
+ * Use the {@link Schedule#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Events extends Fragment {
+public class Schedule extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -35,11 +37,11 @@ public class Events extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Events.
+     * @return A new instance of fragment Schedule.
      */
     // TODO: Rename and change types and number of parameters
-    public static Events newInstance(String param1, String param2) {
-        Events fragment = new Events();
+    public static Schedule newInstance(String param1, String param2) {
+        Schedule fragment = new Schedule();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -47,7 +49,7 @@ public class Events extends Fragment {
         return fragment;
     }
 
-    public Events() {
+    public Schedule() {
         // Required empty public constructor
     }
 
@@ -64,7 +66,7 @@ public class Events extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_events, container, false);
+        return inflater.inflate(R.layout.fragment_schedule, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

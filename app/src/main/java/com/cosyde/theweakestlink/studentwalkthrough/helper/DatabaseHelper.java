@@ -1,4 +1,4 @@
-package com.cosyde.theweakestlink.studentwalkthrough;
+package com.cosyde.theweakestlink.studentwalkthrough.helper;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
