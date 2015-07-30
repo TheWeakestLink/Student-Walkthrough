@@ -10,10 +10,7 @@ import android.widget.TextView;
 import com.cosyde.theweakestlink.studentwalkthrough.R;
 import com.cosyde.theweakestlink.studentwalkthrough.model.ScheduleItem;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 /**
  * Created by lexus on 7/23/15.
@@ -38,6 +35,7 @@ public class ScheduleRecyclerAdapter extends RecyclerView.Adapter<ScheduleRecycl
     public ScheduleRecyclerAdapter.ScheduleRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.cardview_schedule, parent, false);
         ScheduleRecyclerViewHolder holder = new ScheduleRecyclerViewHolder(view);
+
         return holder;
     }
 

@@ -14,8 +14,6 @@ import android.widget.Toast;
 public class App extends Application {
 
     // APPLICATION_CONSTANTS
-    public final String TAG = "My application tag";
-
     private static Context mContext;
     private static SharedPreferences sharedPreferences;
     private static SharedPreferences.Editor spEditor;
@@ -43,6 +41,20 @@ public class App extends Application {
 
     public void cameraIsAvailable() {
 
+    }
+
+    public static void pushToPrefs(String key, String value) {
+        spEditor.putString(key, value);
+        spEditor.apply();
+    }
+
+    public static void pushToPrefs(String key, int value) {
+        spEditor.putInt(key, value);
+        spEditor.apply();
+    }
+
+    public void sOut(String s) {
+        System.out.println(s);
     }
 
 }
