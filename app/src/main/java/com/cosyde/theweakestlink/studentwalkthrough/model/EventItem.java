@@ -5,6 +5,7 @@ package com.cosyde.theweakestlink.studentwalkthrough.model;
  */
 public class EventItem {
 
+
     public EventItem() {
 
     }
